@@ -1,0 +1,162 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    height:100vh;
+    padding: 0;
+    margin:0;
+}
+.logo{
+    margin-left: 80px;
+    max-width: 200px;
+     padding-top: 3rem;
+    display:block;
+    transform: translateX(100%) rotate(10deg);
+    -webkit-transform: translateX(100%) rotate(10deg);
+    -moz-transform: translateX(100%) rotate(10deg);
+    -ms-transform: translateX(100%) rotate(10deg);
+    -o-transform: translateX(100%) rotate(10deg);
+    opacity: 0;
+    animation:slideInRightBounce 4s cubic-bezier(0.68, -.55, 0.265, 1.55) forwards;
+    -webkit-animation:slideInRightBounce 4s cubic-bezier(0.68, -.55, 0.265, 1.55) forwards;
+}
+@keyframes slideInRightBounce{
+    0%{
+        transform: translateX(200px)rotate(15deg);
+        -webkit-transform: translateX(200px)rotate(15deg);
+        -moz-transform: translateX(200px)rotate(15deg);
+        -ms-transform: translateX(200px)rotate(15deg);
+        -o-transform: translateX(200px)rotate(15deg);
+        opacity: 0;
+}
+  60%{
+        transform: translateX(-10px)rotate(-2deg);
+        -webkit-transform: translateX(-10px)rotate(-2deg);
+        -moz-transform: translateX(-10px)rotate(-2deg);
+        -ms-transform: translateX(-10px)rotate(-2deg);
+        -o-transform: translateX(-10px)rotate(-2deg);
+        opacity: 1;
+}
+  80%{
+        transform: translateX(5px)rotate(1deg);
+        -webkit-transform: translateX(5px)rotate(1deg);
+        -moz-transform: translateX(5px)rotate(1deg);
+        -ms-transform: translateX(5px)rotate(1deg);
+        -o-transform: translateX(5px)rotate(1deg);
+        opacity: 1;
+
+}
+  100%{
+        transform: translateX(0)rotate(0);
+        -webkit-transform: translateX(0)rotate(0);
+        -moz-transform: translateX(0)rotate(0);
+        -ms-transform: translateX(0)rotate(0);
+        -o-transform: translateX(0)rotate(0);
+        opacity: 1;
+}
+}
+
+
+
+.formdetail{
+    width:550px;
+    margin: 0 auto;
+    background:  linear-gradient( rgb(228, 233, 80), rgb(255, 255, 251)) no-repeat;
+    height: 600px;
+    text-align: center;
+}
+.title{
+    text-align: center;
+    line-height: 50px;
+padding-top:10px;
+color: rgb(0, 0, 0);
+}
+.title h3{
+    margin-top: -30px;
+    font-size:larger;
+    color: rgb(110, 110, 110);
+}
+.radif1 .name , .lastname{
+    width:42%;
+    height: 40px;
+
+}
+.name{
+    margin-right: 20px;
+}
+input::placeholder{
+    font-size: larger;
+    padding:15px;
+}
+.inputs{
+    width:90%;
+    height: 40px;
+    margin-top:40px;
+}
+input{
+    border: none;
+    font-weight:200;
+    font-size:12px;
+    color:  rgb(78, 78, 78);
+}
+.chekbox{
+    margin-top: 10px;
+    text-align: justify;
+    margin-left:25px;
+}
+.chekbox input {
+    width: 20px;
+    height:20px;
+    padding:20px;
+    accent-color: rgb(228, 233, 80);
+    vertical-align:sub;
+}
+.chekbox h3{
+    display: inline-block;
+
+}
+span{
+    color:rgb(43, 182, 66);
+}
+.button{
+    display: inline-block;
+    width: 90%;
+    height:30px;
+    border: none;
+    background:linear-gradient(rgb(44, 190, 68) , rgba(99, 96, 96, 0.767));
+    font-size: larger;
+    padding-top: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.button {
+    color: aliceblue;
+}
+h5{
+    text-align:center;
+    color: rgb(110, 110, 110);
+    font-size:larger;
+   
+}
+a{
+    color: rgb(43, 182, 66);
+    text-decoration: none;
+}
+@media (max-width:412px) {
+
+    .formdetail{
+    width:100%;
+    margin-top: 0px;
+    padding-bottom: 15px;
+}
+h5{
+margin-bottom: 10px;
+}
+}
+.button:hover{
+    background:rgb(159, 199, 245);
+}
